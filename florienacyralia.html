@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floriena Cyralia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #5f7ddc;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .user-actions {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .cart-text,
+    .login-btn {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    section {
+      margin-top: 60px;
+    }
+
+    .voucher-container {
+      width: 100%;
+      max-width: 1300px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .program-dates {
+      color: #405ab3;
+      padding: 10px 0;
+      font-size: 30px;
+      margin-top: 20px;
+    }
+
+    .voucher-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .collection-container,
+    .benefit-section,
+    .new-banner,
+    .feedback-banner {
+      text-align: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .collection-container img,
+    .benefit-section img,
+    .new-banner img,
+    .feedback-banner img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .product-section {
+      padding: 10px 40px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: center;
+    }
+
+    .product-card {
+      border-radius: 50px;
+      width: 400px;
+      overflow: auto;
+      text-align: center;
+      transition: transform 0.4s;
+      color: #284da1;
+    }
+
+    .product-card:hover {
+      transform: translateY(-15px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .price {
+      font-size: 16px;
+      color: #999;
+      text-decoration: line-through;
+    }
+
+    .sale-price {
+      font-size: 20px;
+      color: #284da1;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+
+    .quick-view {
+      margin-top: 15px;
+      padding: 8px 20px;
+      background-color: #284da1;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .quick-view:hover {
+      background-color: #333;
+    }
+
+    .contact-section {
+      padding: 60px 40px;
+      background-color: #fff;
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #284da1;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #284da1;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FLORIENA CYRALIA</h1>
+    <div class="user-actions">
+      <a href="#" class="cart-text">Giỏ Hàng</a>
+      <a href="#" class="login-btn">Đăng nhập</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="voucher-container">
+      <img src="file:///D|/Duy Thanh/đồ án tốt nghiệp/web/111111111111-01.png" alt="Voucher MUA 1 TẶNG 1" class="voucher-image">
+      <div class="program-dates">
+        * Chương trình diễn ra từ ngày 06/02 đến hết ngày 12/02
+      </div>
+    </section>
+
+    <section class="collection-container">
+      <img src="file:///D|/Duy Thanh/đồ án tốt nghiệp/web/Untitled-1-01.png" alt="Spring Collection 2026">
+    </section>
+
+    <section class="benefit-section">
+      <img src="file:///D|/Duy Thanh/đồ án tốt nghiệp/web/web 4-01.png" alt="Chính sách tiện ích khách hàng">
+    </section>
+
+    <section class="new-banner">
+      <img src="file:///D|/Duy Thanh/đồ án tốt nghiệp/web/web 5-01.png" alt="Sản phẩm mới">
+    </section>
+
+    <section class="product-section">
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="file:///D|/Duy Thanh/đồ án tốt nghiệp/web/AOOOOO-03.png" alt="FLORI BLUE">
+          <div class="product-info">
+            <h3>FLORI BLUE</h3>
+            <div>
+              <span class="price">299.000₫</span>
+              <span class="sale-price">199.000₫</span>
+            </div>
+            <button class="quick-view">Xem nhanh</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="file:///D|/Duy Thanh/đồ án tốt nghiệp/web/AOOOOO-02.png" alt="FRIENDLY TEE">
+          <div class="product-info">
+            <h3>FRIENDLY TEE</h3>
+            <div>
+              <span class="price">299.000₫</span>
+              <span class="sale-price">199.000₫</span>
+            </div>
+            <button class="quick-view">Xem nhanh</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="file:///D|/Duy Thanh/đồ án tốt nghiệp/web/AOOOOO-01.png" alt="CYRA PINK">
+          <div class="product-info">
+            <h3>CYRA PINK</h3>
+            <div>
+              <span class="price">299.000₫</span>
+              <span class="sale-price">199.000₫</span>
+            </div>
+            <button class="quick-view">Xem nhanh</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-banner">
+      <img src="file:///D|/Duy Thanh/đồ án tốt nghiệp/web/feebback-01.png" alt="Feedback">
+    </section>
+
+    <section class="contact-section">
+      <h2>Liên hệ</h2>
+      <div class="contact-info">
+        <p>Địa chỉ: 126/3, đường Yersin, Phường Hiệp Thành, TP. Thủ Dầu Một, Bình Dương</p>
+        <p>SĐT: 0971 873 666</p>
+        <p>Email: florienacyralia@gmail.com</p>
+      </div>
+      <div class="contact-form">
+        <input type="text" placeholder="Họ và tên" />
+        <input type="email" placeholder="Email" />
+        <textarea rows="5" placeholder="Nội dung"></textarea>
+        <button>Gửi</button>
+      </div>
+      <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
